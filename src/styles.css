@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --components-padding-x: calc(3vw);
+    --components-padding-y: max(calc(5vh), var(--components-gap));
+    --components-padding-y-header: max(1vh, calc(var(--components-gap) / 2));
+    --components-gap: calc(0.7 * (1vw + 1vh));
+
+    --primary-contrast: #efbfff;
+    --primary-contrast-darker: #bd97ca;
+    --secondary-color: #242424;
+    --secondary-darker: #141414;
+
+    --border-light: #8d8d8d;
+}
+
+html, body {
+    overflow: hidden;
+}
+
+.swipe_left {
+    animation: swipeleft 600ms ease forwards;
+}
+
+.swipe_right {
+    animation: swiperight 600ms ease forwards;
+}
+
+.swipe_left_secondary {
+    animation: left_secondary 600ms ease forwards;
+}
+
+.swipe_right_secondary {
+    animation: right_secondary 600ms ease forwards;
+}
+
+#hoverable {
+    transition: all 0.2s;
+}
+
+#hoverable:hover {
+    transform: scale(1.08);
+    filter: brightness(150%);
+}
+
+.revealable {
+    animation: appear 500ms 100ms cubic-bezier(0.38, 0.97, 0.56, 0.76) forwards;
+    opacity: 0;
+}
+
+.revealable.unrevealable {
+    animation: unreveal 300ms 100ms cubic-bezier(0.38, 0.97, 0.56, 0.76) backwards;
+    opacity: 1;
+}
+
+@keyframes appear {
+    0% {
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes unreveal {
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes swiperight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes swipeleft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes right_secondary {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes left_secondary {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
