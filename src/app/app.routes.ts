@@ -3,6 +3,15 @@ import { Home } from './home/home.component';
 import { LoginPage } from './login/login.component';
 
 export const routes: Routes = [
-    { path: 'todo-page', component: Home},
-    { path: 'login-page', component: LoginPage}
+    { path: 'home', component: Home},
+    {
+        path: '',
+        redirectTo: 'home',
+        pathMatch: 'full'
+    },
+    {
+        path: '**',
+        redirectTo: 'home',
+        pathMatch: 'full'
+    }
 ];
