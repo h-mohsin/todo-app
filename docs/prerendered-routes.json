@@ -1,0 +1,6 @@
+{
+  "routes": [
+    "/login-page",
+    "/todo-page"
+  ]
+}
