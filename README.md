@@ -1,6 +1,6 @@
-# TodoApp
+# Todo List Website
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.9.
+I created this project using the Angular framework with Typescript as the front-end programming language and Tailwind CSS as the framework for styling.
 
 ## Development server
 
