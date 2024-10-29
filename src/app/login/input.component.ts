@@ -32,8 +32,8 @@ export class InputBox {
     static inputValid = "#ff0000";
     static inputInvalid = "#00ff00";
 
-    static visible = "/assets/visible.png";
-    static invisible = "/assets/notvisible.png";
+    static visible = "assets/visible.png";
+    static invisible = "assets/notvisible.png";
 
     isVisible = false;
     visibilityImage = InputBox.visible;

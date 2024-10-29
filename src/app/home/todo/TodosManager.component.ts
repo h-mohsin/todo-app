@@ -62,12 +62,12 @@ export class Button {
 			<small-button
 				#add
 				id="hoverable"
-				src="/assets/add.png"
+				src="assets/add.png"
 				(mouseup)="newList()"
 			/>
 			<small-button
 				id="hoverable"
-				src="/assets/edit.png"
+				src="assets/edit.png"
 				(click)="edititems()"
 				[enabled]="editing"
 			/>

@@ -30,14 +30,14 @@ const months = require('../../utils/DaysMonths.json').Month;
                             numWeeks
                         }}
                     </h3>
-                    <img src="/assets/dropdown_large.png" class="h-[30px] m-auto w-auto overflow-auto brightness-0"/>
+                    <img src="assets/dropdown_large.png" class="h-[30px] m-auto w-auto overflow-auto brightness-0"/>
                 </div>
 				@for (_ of [].constructor(2); track $index) {
 				<img
 					src="{{
 						$index == 0
-							? '/assets/arrow_back.png'
-							: '/assets/arrow_forward.png'
+							? 'assets/arrow_back.png'
+							: 'assets/arrow_forward.png'
 					}}"
 					class="w-auto h-[2rem] overflow-auto cursor-pointer m-auto"
 					id="hoverable"

@@ -45,7 +45,7 @@ import { isDraggable } from './isDraggable';
                 style="height: ${TodoList.listHeight - (2*TodoList.listYPadding + TodoList.ListGap)}px">
                 <img
                     #draggable
-					[src]="parent == null ? '/assets/drag.png' : (parent.editing ? '/assets/edit.png' : '/assets/drag.png')"
+					[src]="parent == null ? 'assets/drag.png' : (parent.editing ? 'assets/edit.png' : 'assets/drag.png')"
 					class="my-auto h-[50%] w-auto cursor-pointer"
 					id="hoverable"
                     (click)="focusInput()"
@@ -97,9 +97,9 @@ export class TodoList {
 	static speedCollapse = 350; // px / s
 
 	// images
-	static add: string = '/assets/add.png';
-	static remove: string = '/assets/remove.png';
-	static delete: string = '/assets/delete.png';
+	static add: string = 'assets/add.png';
+	static remove: string = 'assets/remove.png';
+	static delete: string = 'assets/delete.png';
 
     static lastTaskExpanded : TodoTask;
 

@@ -41,7 +41,7 @@ import { isDraggable } from '../isDraggable';
 						<img
 							*ngIf="isInstantiator"
 							class="group-hover:brightness-150 m-auto"
-							src="/assets/add.png"
+							src="assets/add.png"
 						/>
 					</div>
 					<input-label
@@ -56,7 +56,7 @@ import { isDraggable } from '../isDraggable';
 					<img
                         #draggable
 						*ngIf="!isInstantiator && parent != null && parent.isNamed"
-						src="/assets/drag.png"
+						src="assets/drag.png"
 						class="h-1/2 w-auto overflow-auto m-auto opacity-0 invisible group-hover:opacity-100 group-hover:visible z-10"
 						id="hoverable"
 						(click)="parent.onExpand()"

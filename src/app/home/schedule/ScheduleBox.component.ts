@@ -27,7 +27,7 @@ import { Component, Input } from '@angular/core';
 					</h5>
 					<img
 						*ngIf="multiple"
-						src="/assets/multiple.png"
+						src="assets/multiple.png"
 						class="h-full w-auto cursor-pointer"
 						id="hoverable"
 

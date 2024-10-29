@@ -53,7 +53,7 @@ export class TextBase {
 			<img
 				*ngIf="!disabled"
 				class="h-1/2 w-auto m-auto overflow-auto"
-				src="/assets/dropdown.png"
+				src="assets/dropdown.png"
 			/>
 		</text-base>
 	`,
