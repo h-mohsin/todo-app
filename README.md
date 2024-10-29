@@ -1,8 +1,8 @@
-**Todo Website**
+# Todo Website
 
 I created this project using the Angular Framework, and Typescript as the front-end programming language. I used Tailwind CSS for styling the webpage. 
 
-**Features**
+## Features
 
  - Create task categories dynamically by clicking the + button at the top of the website
  - Expand and collapse task categories by clicking the + or - button next to the task category
@@ -17,7 +17,7 @@ I created this project using the Angular Framework, and Typescript as the front-
  - View all pending tasks with specified starting times in the schedule calendar
  - Use the right and left arrows at the top of the website to switch between consecutive weeks
 
-**Potential Future Updates**
+## Anticipated Updates
 
  - Allow tasks in the schedule container to be dragged and placed anywhere on the calendar
  - Create a Node JS backend server with a login portal to save user data using MongoDB
