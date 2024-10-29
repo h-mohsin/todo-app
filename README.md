@@ -1,27 +1,23 @@
-# TodoApp
+#Todo Website
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.9.
+I created this project using the Angular Framework, and Typescript as the front-end programming language. I used Tailwind CSS for styling the webpage. 
 
-## Development server
+##Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+ - Create task categories dynamically by clicking the + button at the top of the website
+ - Expand and collapse task categories by clicking the + or - button next to the task category
+ - Edit a task category by clicking the pen icon at the top of the website and the pen icon next to the task category to edit
+ - Delete a task category by clicking the pen icon at the top
+ - Create and fulfill tasks dynamically by clicking the + Todo button at thew end of each task category with the following options:
+		- 'Date': Consists of options for each day, date, month and year after the current date
+   		- 'Start Time': Consists of options for each hour and 5-minute-intervals in every hour after the current hour
+   		- 'End Time': Consists of options for time after setting Start Time
+   		- 'Repeat': Tells the program to repeat the task if necessary, every day, week or month (This will be reflected in the schedule calendar)
+ - Drag task categories and tasks along the vertical axis using the associated drag icon 
+ - View all pending tasks with specified starting times in the schedule calendar
+ - Use the right and left arrows at the top of the website to switch between consecutive weeks
 
-## Code scaffolding
+##Potential Future Updates
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+ - Allow tasks in the schedule container to be dragged and placed anywhere on the calendar
+ - Create a Node JS backend server with a login portal to save user data using MongoDB
